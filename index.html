@@ -4,99 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
     <title>Filmes</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-
-        }
-        h1.title {
-            background-color: cornflowerblue;
-            color: black;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo {
-            width:150px;
-            height:150px;
-            margin-right: 10px;
-        }
-        
-        
-        h1.title{
-            background-color: cornflowerblue;
-            color:black;
-            padding: 10px;
-        }
-        form {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #333;
-            border-radius:20px;
-            display: flex;
-        }
-        form input {
-            padding: 5px;
-            border: none;
-            outline: none;
-            flex: 1;
-
-        }
-        form button {
-            padding: 5px 10px;
-            background-color:cornflowerblue;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        form button:hover{
-            background-color: darkblue;
-        }
 
 
-
-        div.lista {
-            margin-top: 10px;
-            padding: 5px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    
-        div.item {
-            text-align:center;
-            padding: 10px;
-            width: 200px;
-            border: 2px solid cornflowerblue;
-            border-radius: 5px;
-            margin:5px ;
-
-        }
-
-        div.item:hover {
-              background-color: cornflowerblue;
-              cursor: pointer;
-        }
-
-        div.item img {
-            width: 100%;
-
-        }
-
-        
-
-    </style>
 </head>
 <body>
         <img class="logo" src="logoCinemax.jpg" alt="CineMax Logo">
         <h1 class="title">CineMax</h1>
         <form>
             <input name="pesquisa" placeholder="digite o nome do filme" />
-            <button>Pesquisar</button>
+            <button onclick="buscar()">Pesquisar</button>
         </form>
         <div class="lista">
              <div class="item">
@@ -122,52 +41,7 @@
                 </div>
              
   </div>
-  <script>
-    const apikey = '8fa8be48' ; 
-    const frmPesquisa = document.querySelector("form");
 
-frmPesquisa.onsubmit = (ev) => {
-    ev.preventDefault();
-
-    const pesquisa = ev.target.pesquisa.value;
-
-    if (pesquisa == "") {
-    alert ('preencha o caminho!');
-    return;
-
-
-    }
-    fetch(`https://www.omdbapi.com/?s=${pesquisa}&apikey=${apikey}`)
-    .then(result => result.json())
-    .then(json => carregaLista(json));
-
-}
-const carregaLista = (json) => {
-    const lista = document.querySelector("div.lista");
-    lista.innerHTML = "";
-
-    console.log(json.Response == 'false')
-
-    if (json.Response == 'False') {
-        alert('nenhuma filme encontrado');
-        return
-    }
-
-    json.Search.forEach(Element => {
-        console.log(Element);
-
-        let item = document.createElement("div");
-        item.classList.add("item");
-
-        item.innerHTML = `<img src="${Element.Poster}" /><h2>${Element.Title}</h2>`
-        
-        lista.appendChild(item);
-    })
-
-
-
-}
-  </script>
     
 </body>
 </html>
