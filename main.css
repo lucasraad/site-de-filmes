@@ -3,6 +3,25 @@
     padding: 0;
 
 }
+a {
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: cornflowerblue;
+}
+
+b {
+    text-decoration: none;
+    color: black;
+
+}
+b:hover{
+    color: cornflowerblue;
+}
+
+
 h1.title {
     background-color: cornflowerblue;
     color: black;
@@ -10,13 +29,6 @@ h1.title {
     display: flex;
     align-items: center;
 }
-
-.logo {
-    width:150px;
-    height:150px;
-    margin-right: 10px;
-}
-
 
 h1.title{
     background-color: cornflowerblue;
@@ -79,16 +91,76 @@ div.item img {
 
 }
 
-
-
 .logo{
-    height: 48px;
-    width: 48px;
+    height: 130px;
+    width: 130px;
     margin-right: 12px;
     
+}
+.login-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sign-up-link {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+  }
+  
+a {
+    margin: 10px;
+    padding: 10px;
+    border-radius:20px;
+    display: flex;
+}
+a input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+
+}
+a button {
+    padding: 5px 10px;
+    background-color:cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+b button:hover{
+    background-color: darkblue;
+}
+
+b {
+    margin: 10px;
+    padding: 10px;
+    border-radius:20px;
+    display: flex;
+}
+b input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+
+}
+b button {
+    padding: 5px 10px;
+    background-color:cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+b button:hover{
+    background-color: darkblue;
 }
 
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
 }
+
