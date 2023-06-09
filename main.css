@@ -12,16 +12,6 @@ a:hover{
     color: #6495ed;
 }
 
-b {
-    text-decoration: none;
-    color: black;
-
-}
-b:hover{
-    color: cornflowerblue;
-}
-
-
 h1.title {
     background-color: cornflowerblue;
     color: black;
@@ -104,7 +94,7 @@ div.item img {
 }
 
 .sign-up-link {
-        position:fixed;
+        position:absolute;
         top: 25px;
         right: 5px;
         
@@ -131,24 +121,24 @@ a button {
     cursor: pointer;
 }
 
-b button:hover{
+a button:hover{
     background-color: darkblue;
 }
 
-b {
+a {
     margin: 10px;
     padding: 10px;
     border-radius:20px;
     display: flex;
 }
-b input {
+a input {
     padding: 5px;
     border: none;
     outline: none;
     flex: 2;
 
 }
-b button {
+a button {
     padding: 5px 10px;
     background-color:cornflowerblue;
     border: none;
@@ -156,7 +146,7 @@ b button {
     cursor: pointer;
 }
 
-b button:hover{
+a button:hover{
     background-color: darkblue;
 }
 
