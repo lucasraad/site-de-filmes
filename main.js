@@ -37,7 +37,13 @@ const carregaLista = (json) => {
         lista.appendChild(item);
     })
 
+    const chk = document.getElementById('chk')
 
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark')
+    })
+    
 
 }
 }
+

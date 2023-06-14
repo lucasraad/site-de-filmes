@@ -1,36 +1,32 @@
 *{
     margin: 0;
     padding: 0;
-
-}
-a {
-    text-decoration: none;
-    color: black;
-
-}
-a:hover{
-    color: #6495ed;
+    font-family: 'Netflix Font', sans-serif;
 }
 
 h1.title {
-    background-color: cornflowerblue;
+    background-color: rgb(219, 53, 16);
     color: black;
     padding: 10px;
     display: flex;
     align-items: center;
+    
 }
 
 h1.title{
-    background-color: cornflowerblue;
-    color:black;
+    background-color: rgb(0, 0, 0);
+    color:rgb(195, 42, 42);
     padding: 10px;
+    
+
+
 }
 form {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius:20px;
-    display: flex;
+    display:block;
+    font-size: 20px;
+    margin: 20px 0 10px;
+    font-family: 'Gotu', sans-serif;
+    font-weight: bold;
 }
 form input {
     padding: 5px;
@@ -41,39 +37,43 @@ form input {
 }
 form button {
     padding: 5px 10px;
-    background-color:cornflowerblue;
+    background-color:rgb(252, 252, 252);
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 form button:hover{
-    background-color: darkblue;
+    background-color: rgb(200, 200, 200);
 }
 
 
 
 div.lista {
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+div.item:hover{
+    transform: scale(1.1);
+
+}
+
 div.item {
     text-align:center;
     padding: 10px;
-    width: 200px;
-    border: 2px solid cornflowerblue;
-    border-radius: 5px;
+    width: 20vh;
     margin:5px ;
 
 }
 
 div.item:hover {
-      background-color: cornflowerblue;
+      background-color: rgb(124, 122, 122);
       cursor: pointer;
+      border-radius: 10px;
 }
 
 div.item img {
@@ -87,71 +87,22 @@ div.item img {
     margin-right: 12px;
     
 }
-.login-link {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
 
-.sign-up-link {
-        position:absolute;
-        top: 25px;
-        right: 5px;
-        
-  }
   
-a {
-    margin: 10px;
-    padding: 10px;
-    border-radius:20px;
-    display: flex;
+.menu{
+    text-decoration: none;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(62, 68, 79);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   
 }
-a input {
-    padding: 5px;
-    border: none;
-    outline: none;
-    flex: 1;
 
-}
-a button {
-    padding: 5px 10px;
-    background-color:rgb(14, 14, 15);
-    border: none;
+.menu:hover{
+    color: rgb(195, 42, 42);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
     border-radius: 10px;
-    cursor: pointer;
-}
 
-a button:hover{
-    background-color: darkblue;
-}
-
-a {
-    margin: 10px;
-    padding: 10px;
-    border-radius:20px;
-    display: flex;
-}
-a input {
-    padding: 5px;
-    border: none;
-    outline: none;
-    flex: 2;
-
-}
-a button {
-    padding: 5px 10px;
-    background-color:cornflowerblue;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-a button:hover{
-    background-color: darkblue;
-}
-
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
 }
 
